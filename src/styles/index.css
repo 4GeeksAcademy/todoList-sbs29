@@ -18,8 +18,11 @@ h1 {
 
 .notebook {
     width: 50%;
+    min-height: auto;
+    max-height: 50vh;
     border: 1px solid rgb(224, 224, 224);
     background: whitesmoke;
+    overflow: auto;
 }
   
 input {
