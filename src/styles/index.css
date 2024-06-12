@@ -1,12 +1,14 @@
 .app {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
+}
 
+body {
+    background-color: rgb(245, 239, 233);
     text-align: center;
     font-family: Arial, sans-serif;
-    padding: 20px;
 }
 
 h1 {
@@ -16,18 +18,17 @@ h1 {
 
 .notebook {
     width: 50%;
-    background-color: rgb(245, 239, 233);
-    border: 1px solid rgb(245, 239, 233);
+    border: 1px solid rgb(224, 224, 224);
+    background: whitesmoke;
 }
   
 input {
-    padding: 10px;
+    padding: 1% 5%;
     font-size: 2rem;
-    width: 90%;
+    width: 100%;
     border: none;
-    background: rgb(245, 239, 233);
+    background: whitesmoke;
     color: grey;
-
     outline: none;
 }
   
@@ -37,11 +38,12 @@ ul {
 }
   
 li {
-    margin: 10px 5%;
-    padding: 10px;
-    background: rgb(245, 239, 233);
-    font-size: 2rem;
+    
+    padding: 1% 5%;
+    background: whitesmoke;
+    font-size: 1.5rem;
     color: grey;
+    border: 1px solid rgb(224, 224, 224);
     
     display: flex;
     justify-content: space-between;
@@ -57,4 +59,9 @@ li {
 .task:hover .delete-icon {
     display: inline;
 }
-  
+
+footer {
+    color: grey;
+    float: left;
+    margin: 0 0 10px 10px;
+}

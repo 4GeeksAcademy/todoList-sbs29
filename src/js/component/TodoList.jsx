@@ -33,13 +33,14 @@ const TodoList = () => {
                         <li>No hay tareas, añadir tareas</li>
                     ) : (
                         tasks.map((task, index) => (
-                        <li key={index} className="task">
-                            {task}
-                            <span className="delete-icon" onClick={() => handleDelete(index)}>X</span>
-                        </li>
-                    ))
+                            <li key={index} className="task">
+                                {task}
+                                <span className="delete-icon" onClick={() => handleDelete(index)}>X</span>
+                            </li>
+                        ))
                     )}
                 </ul>
+                <footer>{tasks.length} items left</footer>
             </div>
         </div>
       );
